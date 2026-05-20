@@ -17,15 +17,8 @@ Jessica Lieu (018326048)
 
 The program is a closed-loop feedback cycle. First, the AI will identify key zones of the receipt such as header, line items, and footer. Then those items and numbers will be extracted into a structured format. To ensure accuracy, function calling would be used so that arithmetic would be handled by a Python function for deterministic calculation. Then we would compare the sum against the printed receipt total. If a discrepancy persists after a re-scan, then it would require human intervention.
 
-## Progress
-
-- Core Logic: Finished the main Python code and the "self-correction" loop that lets the AI fix its own mistakes.
-- Image Fixes: Added padding to long receipts so they don’t get squashed or blurry during the scan.
-- Debug Logs: Created a history of every action the AI takes across multiple retry attempts.
-
-## Next Steps
-
-- Hallucination Detection: Catch VLM errors where the model attempts to change item prices to force a math match
-- Model Comparison: Currently using Gemma, but will compare with Llama and Qwen
-- Interface Design: Building a simple dashboard that shows the receipt on one side and the AI's thought process on the other.
-- Budgeting Integration: Connecting the AI to your personal spending rules so it can automatically flag purchases that exceed user-defined spending limits.
+# How to Run
+```
+pip install -r requirements.txt
+streamlit run main.py
+```
