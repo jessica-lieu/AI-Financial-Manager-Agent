@@ -10,7 +10,6 @@ Jessica Lieu (018326048)
 
 ## Dataset
 
-- ReceiptQA: A massive dataset of 171,000 QA pairs from 3,500 receipts across Retail, Food, Supermarkets, Fashion, and Medical domains.
 - Personal receipts with blurry text, missing fields, and inconsistent formatting
 
 ## Approach
@@ -22,3 +21,7 @@ The program is a closed-loop feedback cycle. First, the AI will identify key zon
 pip install -r requirements.txt
 streamlit run main.py
 ```
+
+# Links
+[Google Doc Report](https://docs.google.com/document/d/1awDDhusgOA7KPE0YNuJX4gIp_b9VgUSMoZTNwjZE4hg/edit?usp=sharing)
+[Demo Video](https://drive.google.com/file/d/1slbuiF-6wNCIIPiY30Jm3RbT8Zb4eO8_/view?usp=sharing)
